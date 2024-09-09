@@ -1,0 +1,15 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    background-image: url(../images/hobbit_hero.jpeg);
+    text-align: center;
+    background-size: cover;
+
+
+    h1 {
+        font-family: Ringm;
+        font-size: 50px;
+        color: rgb(188, 135, 12);
+    }
+}
