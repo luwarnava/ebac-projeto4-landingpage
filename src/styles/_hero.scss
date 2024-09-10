@@ -2,14 +2,68 @@
 
 .hero {
     padding: 5.6vw;
-    background-image: url(../images/hobbit_hero.jpeg);
-    text-align: center;
+    height: 90vh;
+    background-image: url(../images/hobbit_hero2.jpg);
+    text-align: left;
     background-size: cover;
+    
+    color: variaveis.$corTextoPrincipal;
+
+    &__content {
+        max-width: 660px;
+        
+        
+
+        &__branding {
+            padding-bottom: 4vw;
+            font-family: Ringm;
+
+            h1 {
+                font-size: 80px;
+                color: rgb(188, 135, 12);
+                padding-top: 40px;
+                
+            }
+        
+            p {
+                font-size: 28px;
+                padding-top: 20px;
+            }
+    
+        }
+
+        h2 {
+            font-family: Avenir, sans-serif;
+            font-size: 18px;
+            padding-bottom: 8px;
+        }
+
+        &__streaming {
+                display: flex;
+                justify-content: space-between;
+    
+    
+            &__stream{
+                width: calc(50% - 12px);
+        
+                img {
+                    max-width: 10vw;
+                    border-radius: 8px;
+                }
 
 
-    h1 {
-        font-family: Ringm;
-        font-size: 50px;
-        color: rgb(188, 135, 12);
+            }
+        }
+    }
+
+    .amazon-logo {
+        width: 12vw;
+        height: 12vh;
+    }
+    .button {
+        display: flex;
+    }
+    .text {
+        display: flex;
     }
 }
