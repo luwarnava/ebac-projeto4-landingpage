@@ -1,6 +1,9 @@
 @use 'variaveis';
 @use 'hero';
-
+@use 'movies';
+@use 'curiosities';
+@use 'header';
+@use 'footer';
 
 
 @font-face {
@@ -15,11 +18,6 @@
     font-weight: 700;
 }
 
-@font-face {
-    font-family: Hobbiton;
-    src: url(../../assets/fonts/hobbiton-brushhand-2253/HobbitonBrushhandhobbitonBrush-WygA.ttf);
-    font-weight: 700;
-}
 @font-face {
     font-family: Midle;
     src: url(../../assets/fonts/middleearth-28347/Middleearth-ao6m.ttf);
@@ -46,4 +44,25 @@
 body {
     background-color: variaveis.$corDeFundo;
 
+}
+
+.title--big {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-family: Ringbear;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.title {
+    font-family: Ringbear;
+    font-size: 20px;
+    margin: 10px 0 0;
+
+}
+
+.anel {
+    font-family: Ring;
+    font-size: 60px;
+    color: variaveis.$corTitlo;
+    padding-bottom: 10px;
 }

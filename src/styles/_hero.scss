@@ -6,6 +6,7 @@
     background-image: url(../images/hobbit_hero2.jpg);
     text-align: left;
     background-size: cover;
+    margin-bottom: 80px;
     
     color: variaveis.$corTextoPrincipal;
 
@@ -20,7 +21,7 @@
 
             h1 {
                 font-size: 80px;
-                color: rgb(188, 135, 12);
+                color: variaveis.$corTitlo;
                 padding-top: 40px;
                 
             }
@@ -28,6 +29,7 @@
             p {
                 font-size: 28px;
                 padding-top: 20px;
+                color: variaveis.$corTextoSecundario;
             }
     
         }
@@ -40,30 +42,42 @@
 
         &__streaming {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
     
     
             &__stream{
-                width: calc(50% - 12px);
+                width: 50% ;
         
                 img {
-                    max-width: 10vw;
+                    max-width: 20vw;
                     border-radius: 8px;
+                    
                 }
 
+                a {
+                    text-decoration: none;
+                    color: variaveis.$corTextoSecundario;
 
+                    p {
+                        font-family: Avenir;
+                        font-size: 20px;
+                        width: 12vw;
+                        padding-bottom: 4px;
+
+                        &:hover {
+                            color: variaveis.$corTextoPrincipal;
+                            font-family: Midle;
+                            font-size: 22px;
+                            border-bottom: 4px solid variaveis.$corTitlo;
+                        }
+                    }
+                }
             }
         }
     }
-
-    .amazon-logo {
-        width: 12vw;
-        height: 12vh;
-    }
-    .button {
-        display: flex;
-    }
+    
     .text {
         display: flex;
+        padding-top: 4px;
     }
 }

@@ -1,0 +1,26 @@
+@use 'variaveis';
+
+
+.footer {
+    padding: 50px 8px;
+    color: variaveis.$corTextoSecundario;
+    font-family: Avenir;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 16px;
+        
+    }
+
+    h2 {
+        padding-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 1.6;
+    }
+}

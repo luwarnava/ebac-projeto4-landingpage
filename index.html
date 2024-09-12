@@ -7,38 +7,143 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
+    <header class="header">
+        <div class="header__wrapper">
+            <h2>
+                Fanpage
+            </h2>
+            <p>a</p>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#hero" class="button">Assista agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#movie" class="button">Filmes</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#curiosities" class="button">Curiosidades</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="hero" class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
-                <h1>The Hobbit</h1>
-                <p>Embarque na jornada épica The Hobbit: Descubra um mundo de fantasia, coragem e aventura além da imaginação!</p>
+                <h1>O Hobbit</h1>
+                <p>Embarque na jornada épica O Hobbit: Descubra um mundo de fantasia, coragem e aventura além da imaginação!</p>
             </div>
-            <h2>Disponível em:</h2>
+            <h2 class="title--small">Disponível em:</h2>
             <ul class="hero__content__streaming">
                 <li class="hero__content__streaming__stream">
-                    <img class="amazon-logo" src="./dist/images/amazon-logo.jpg" alt="Logo da Amazon Prime video">
-                    <button class="button"></button>
+                    <a target="_blank" href="https://www.primevideo.com/-/pt/detail/O-Hobbit-Uma-Jornada-Inesperada-Vers%C3%A3o-Estendida/0N0HV2RYCF8Z7RBFWDLNF0VMSE">
+                    <img class="amazon-logo" src="./dist/images/amazon.png" alt="Logo da Amazon Prime video">
+                    <p class="link">Assista agora</p>
+                </a>
                     <span class="text">Assinatura</span>
                 </li>
                 <li class="hero__content__streaming__stream">
-                    <img src="./dist/images/apple-tv-logo.jpg" alt="Logo da Apple tv">
-                    <button class="button"></button>
-                    <span class="text">A partir de R$ 7,90</span>
-                </li>
-                <li class="hero__content__streaming__stream">
-                    <img src="./dist/images/google-play-logo.jpg" alt="Logo da Google Play filmes">
-                    <button class="button"></button>
+                    <a target="_blank" href="https://play.google.com/store/movies/details?id=ZFb07ZXAg_8.P">
+                        <img src="./dist/images/google-play-logo.jpg" alt="Logo da Google Play filmes">
+                        <p class="link">Assista agora</p>
+                    </a>
                     <span class="text">A partir de R$ 4,90</span>
                 </li>
             </ul>
-            
         </div>
     </section>
-    <section class="movies">
-        
+    <section id="movie" class="movies">
+        <p class="anel">um anel para a todos governar</p>
+        <h2 class="title--big">Saiba a ordem correta da triologia:</h2>
+        <ul class="movies__list">
+            <li class="movies__list__item">
+                <img src="./dist/images/filmes/uma-jornada.jpg" alt="Cartaz do filme O Hobbit - uma jornada inesperada">
+                <h3 class="title">Primeiro filme:</h3>
+                <p>Como a maioria dos hobbits, Bilbo Bolseiro leva uma vida tranquila até o dia em que recebe uma missão do mago Gandalf. Acompanhado por um grupo de anões, ele parte numa jornada até a Montanha Solitária para libertar o Reino de Erebor do dragão Smaug.</p>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/filmes/smaug.jpg" alt="Cartaz do filme O Hobbit - A Desolação de Smaug">
+                <h3 class="title">Segundo filme:</h3>
+                <p>Ao lado de um grupo de anões e de Gandalf, Bilbo segue em direção à Montanha Solitária, onde deverá ajudar seus companheiros a retomar a Pedra de Arken. O problema é que o artefato está perdido em meio a um tesouro protegido pelo temido dragão Smaug.</p>
+            </li>
+            <li class="movies__list__item">
+                <img src="./dist/images/filmes/batalha.jpg" alt="Cartaz do filme O Hobbit - A Batalha dos Cinco Exércitos">
+                <h3 class="title">Terceiro filme:</h3>
+                <p>O dragão Smaug lança sua fúria ardente contra a Cidade do Lago que fica próxima da montanha de Erebor. Bard consegue derrotá-lo, mas, rapidamente, sem a ameaça do dragão, inicia-se uma batalha pelo controle de Erebor e sua riqueza. Os anões, liderados por Thorin, adentram a montanha e estão dispostos a impedir a entrada de elfos, anões e orcs. Bilbo Bolseiro e Gandalf tentam impedir a guerra.</p>
+            </li>
+        </ul>
     </section>
-    <section class="curiosities">
+    <section id="curiosities" class="curiosities">
+        <p class="anel">um anel para encontra los</p>
+        <h2 class="title--big">Curiosidades sobre a triologia:</h2>
+        <ul class="curiosities__container">
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/bilbo.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Bilbo Baggins</p>
+                    <p class="card__description">Diferente de muitos heróis literários da época, Bilbo Baggins é um personagem comum, sem habilidades extraordinárias. Isso tornou o livro inovador, porque os leitores podiam se identificar com Bilbo, que relutantemente embarca em uma grande aventura.</p>
+                </div>
+                </div>
+            </li>
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/anoes.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Influências Mitológicas</p>
+                    <p class="card__description"> Tolkien era especialista em mitologia nórdica, o que teve grande influência na criação das raças e personagens de O Hobbit, como os anões (inspirados nos anões das sagas nórdicas) e os trolls (com características semelhantes às criaturas da mitologia escandinava).</p>
+                </div>
+                </div>
+            </li>
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/condado-hobbit.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Origem da História</p>
+                    <p class="card__description">A ideia para O Hobbit começou quando Tolkien, professor de filologia, estava corrigindo provas e, de repente, escreveu a frase "Num buraco no chão vivia um hobbit" no verso de uma das folhas. Ele ficou intrigado com o que havia escrito e começou a desenvolver a história a partir daí.</p>
+                </div>
+                </div>
+            </li>
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/gandalf.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Nomes trocados</p>
+                    <p class="card__description">Nos primeiros rascunhos, o mago Gandalf se chamava Bladorthin, enquanto Thórin Escudo de Carvalho, líder dos anões, era chamado de... Gandalf! </p>
+                </div>
+                </div>
+            </li>
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/anel.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Conexões com O Senhor dos Anéis</p>
+                    <p class="card__description">Quando Tolkien começou a escrever O Senhor dos Anéis, ele revisitou O Hobbit para garantir a consistência entre as duas obras. Isso levou à adição de alguns detalhes, como o anel de Bilbo, que em O Hobbit era apenas um objeto mágico comum, mas que se tornou o Um Anel em O Senhor dos Anéis.</p>
+                </div>
+                </div>
+            </li>
+            <li class="curiosities__container__itens">
+                <div class="card">
+                    <img src="./dist/images/curiosidades/maps.jpg" viewBox="0 0 24 24" alt="">
+                <div class="card__content">
+                    <p class="title card__title">Ilustrações de Tolkien</p>
+                    <p class="card__description">Tolkien também era um ilustrador talentoso e fez várias ilustrações para O Hobbit, incluindo mapas e desenhos dos personagens e cenários. Algumas dessas ilustrações foram incluídas nas edições iniciais do livro.</p>
+                </div>
+                </div>
+            </li>
+        </ul>
+        <p class="anel anel-last">um anel para todos traser e na escuridao aprisiona los</p>
+    </section>
 
-    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <h2>Fanpage</h2>
+        <p>
+            © 2024 Aventura na Terra Média.
+        </p>
+        <p> Sua fonte de conteúdo dedicada ao universo de O Hobbit. Mergulhe nas aventuras de Bilbo Baggins, Gandalf e os anões enquanto desbravamos cada canto da Terra Média. 
+            Fique por dentro de curiosidades, análises e novidades sobre a trilogia que nos levou de volta ao mundo de J.R.R. Tolkien.
+        </p>
+        </div>
+    </footer>
 </body>
 </html>

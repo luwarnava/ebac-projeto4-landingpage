@@ -1,0 +1,70 @@
+@use 'variaveis';
+
+
+.curiosities {
+    padding: 4vw 5.6vw;
+
+
+    .anel-last {
+      margin-top: 80px;
+    }
+ 
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4vw;
+    }
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 266px;
+    background-color: variaveis.$corDeFundo;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 2px variaveis.$corTextoSecundario;
+    transition: all 0.8s;
+  }
+  
+
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: variaveis.$corTextoPrincipal;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.9s ;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    color: #333;
+    padding-bottom: 4px;
+  }
+  
+  .card__description {
+    font-family: Avenir;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1d1d1d;
+    line-height: 1.2;
+  }
+  

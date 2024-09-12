@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.movies {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;       
+    color: variaveis.$corTextoPrincipal;
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            max-width: 26vw;
+            border-radius: 4px;
+
+            img {
+                margin-bottom: 10px;
+                border-radius: 4px;
+
+                &:hover {
+                    border: 4px solid variaveis.$corTextoSecundario;
+                }
+            }
+            p {
+                font-size: 20px;
+                font-family: Avenir;
+                line-height: 1.4;
+                padding-top: 10px;
+                color: variaveis.$corTextoSecundario;
+            }
+
+        }
+    }
+}
