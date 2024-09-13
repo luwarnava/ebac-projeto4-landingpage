@@ -7,22 +7,36 @@
     text-align: left;
     background-size: cover;
     margin-bottom: 80px;
-    
     color: variaveis.$corTextoPrincipal;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hobbit_hero_tablet.jpg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
 
     &__content {
         max-width: 660px;
-        
-        
+
 
         &__branding {
             padding-bottom: 4vw;
             font-family: Ringm;
 
+            @media (max-width: 768px) {
+                max-width: 400px;
+            }
+
             h1 {
                 font-size: 80px;
                 color: variaveis.$corTitlo;
                 padding-top: 40px;
+
+                @media (max-width: 768px) {
+                    font-size: 40px;
+                }
                 
             }
         
@@ -43,11 +57,16 @@
         &__streaming {
                 display: flex;
                 justify-content: space-evenly;
-    
+
     
             &__stream{
                 width: 50% ;
-        
+                
+                @media (max-width: 768px) {
+                    width: 50%;
+                    margin-bottom: 24px;
+                }
+
                 img {
                     max-width: 20vw;
                     border-radius: 8px;
@@ -70,6 +89,8 @@
                             font-size: 22px;
                             border-bottom: 4px solid variaveis.$corTitlo;
                         }
+
+                        
                     }
                 }
             }

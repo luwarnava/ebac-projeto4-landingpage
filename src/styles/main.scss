@@ -12,11 +12,6 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
-    font-weight: 700;
-}
 
 @font-face {
     font-family: Midle;
@@ -51,6 +46,10 @@ body {
     font-size: 30px;
     font-family: Ringbear;
     color: variaveis.$corTextoPrincipal;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .title {
@@ -65,4 +64,11 @@ body {
     font-size: 60px;
     color: variaveis.$corTitlo;
     padding-bottom: 10px;
+
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
 }
